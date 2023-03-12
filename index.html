@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prac</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<div class="container">
+        <nav>
+            <h1>Hotels</h1>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" aria-hidden="true" onclick="closemenu()"></i>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">contact us</a></li>
+                    <li><a href="#">Rooms</a></li>
+                    <li><a href="#">signup</a></li>
+                </ul>
+            </div>
+            <div style="display: flex;">
+                <i class="fa fa-bars" aria-hidden="true" onclick="showmenu()"></i>
+                <img src="images/moon.jpg" alt="" id="icons">
+            </div> 
+
+        </nav><!--End of nav -->
+
+        <div class="slider">
+            <div id="slider-box">
+                <img src="images/bg1.jpg" alt="" >
+                <img src="images/bg2.jpg" alt="" >
+                <img src="images/bg3.jpg" alt="" >
+                <img src="images/bg4.jpg" alt="" >
+            </div>
+        </div><!--End of slider-->
+
+        <div class="text">
+            <h3>WELCOME TO THE AL GRANDE HAYATT HOTEL</h3>
+            <p>AL GRANDE HAYATT welcomes you with warmth and a feeling that each guest is truly special.It offers a cozy and intimate experience amidst the glitz and glamour of south America our caring and courteous staffs are ever eager to ensure that all individual needs are cared for with professional expertise and a personal touch.</p>
+            <br>
+            <p> The rooms have been designed with different floor plans to create individual spaces. We have Deluxe Rooms,Double and Single Rooms each fitted with ensuite bathrooms with all modern convenieces.All rooms has air conditiong and is equipped with ell stocked mini-bars, television with cable tv ,conference facilities avaible for apporximately 40 persons .our multi cuisine restaurtant offers ,a plethora of tasty local and international dishes to satisfy all palates. this with the elegant ambience makes for a truly  unique experience</p>
+        </div><!--End of text-->
+
+        <div class="exclusive-ser">
+            <h4>OUR EXCLUSIVES SERVICES</h4>
+            <div class="row-1"> 
+                <div class="col-4">
+                    <div class="img-box">
+                         <img src="images/icon1.jpg" alt="">
+                    </div>
+                    <b>BEST FOOD EVER</b>
+                    <p>we provide wast range of food varieties,
+                        right from the cntinental dishes to the
+                        traditional one</p>
+                </div>
+                <div class="col-4">
+                    <div class="img-box">
+                        <img src="images/icon2.jpg" alt="">
+                   </div>
+                    <b>BEST FOOD EVER</b>
+                    <p>we provide wast range of food varieties,
+                        right from the cntinental dishes to the
+                        traditional one</p>
+                </div>
+                <div class="col-4">
+                    <div class="img-box">
+                        <img src="images/icon3.jpg" alt="">
+                   </div>
+                    <b>BEST FOOD EVER</b>
+                    <p>we provide wast range of food varieties,
+                        right from the cntinental dishes to the
+                        traditional one</p>
+                </div>
+                <div class="col-4">
+                    <div class="img-box">
+                        <img src="images/icon4.jpg" alt="">
+                   </div>
+                    <b>BEST FOOD EVER</b>
+                    <p>we provide wast range of food varieties,
+                        right from the cntinental dishes to the
+                        traditional one</p>
+                </div><!--End of col-4 -->
+            </div><!--End of row-1 -->
+        </div><!--End of Exclusive-ser -->
+
+        <div class="room-section">
+            <h4>MAKE  YOUR STAY MEMORABLE WITH OUR ROOMS</h4>
+            <div class="row-2">
+                <div class="col-3">
+                    <img src="images/room1.jpg">
+                    <b>EXCLUSIVE SUITE</b>
+                    <p>These mahogany decorated rooms offer a king-sized bedrooms with regal-sized accomodation and a sapcious balcony</p>
+                </div>
+                <div class="col-3">
+                    <img src="images/room4.jpg" alt="">
+                    <b>KING SIZE LUXURY</b>
+                    <p>These rooms are decorated with a king-sized accomodation and a spacious poolside balcony</p>
+                </div>
+                <div class="col-3">
+                    <img src="images/room3.jpg" alt="">
+                    <b>SUPER TWIN</b>
+                    <p>These sumptuous rooms offer a stylish living space. Two Twin beds combines state of the art</p>
+                </div><!--End of col-3 -->
+            </div><!--End of row-2 -->
+        </div><!--End of room-section-->
+
+        <footer>
+            <div class="f-col-4">
+                <h3>Contact Us</h3>
+                <p>contact no</p>
+                <p>Email</p>
+            </div>
+            <div class="f-col-4">
+                <h3>Main links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">ABout Us</a></li>
+                    <li><a href="#">rooms</a></li>
+                    <li><a href="#">sign up</a></li>
+                </ul>
+            </div>
+            <div class="f-col-4">
+                <h3>follow us</h3>
+                <p>follow us on social media</p>
+            </div>
+            <div class="f-col-4">
+                <h3>feedback</h3>
+            </div><!--End of f-col-4 -->
+        </footer><!--End of Footer -->
+
+</div><!--End of container -->
+
+<!-- Write Script for menubar -->
+    <script>
+        var navlinks= document.getElementById("navlinks");
+        
+        function showmenu(){
+            navlinks.style.right="0";
+        }
+        function closemenu(){
+            navlinks.style.right="-200px";
+        }
+
+// Write Script for light mode and dark mode
+        let icon =document.getElementById("icons");
+        icon.onclick = ()=> {
+            document.body.classList.toggle("dark-theme");
+            
+            if(document.body.classList.contains("dark-theme"))
+            {
+                icon.src="images/sun.png";
+            }
+            else
+            {
+                icon.src="images/moon.jpg";
+            }
+        }
+    </script>
+</body>
+</html>
